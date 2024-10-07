@@ -141,8 +141,8 @@ parser.add_argument('--date_start', type=str, required=True, help='Fecha de inic
 parser.add_argument('--date_end', type=str, required=True, help='Fecha de fin para el análisis')
 args = parser.parse_args()
 
-date_start = args.date_start
-date_end = args.date_end
+date_start = args.date_start if args.date_start else "2024-01-01"
+date_end = args.date_end if args.date_start else "2024-01-01"
 # Realizar la solicitud POST para obtener los comentarios
 api_url = "https://reportapi.infocenterlatam.com/api/fstadistic/getReportListenComments"
 payload = {
