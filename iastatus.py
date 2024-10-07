@@ -1,5 +1,3 @@
-
-text/x-generic passenger_wsgi.py ( Python script, UTF-8 Unicode text executable )
 # -- coding: utf-8 --
 """Proyecto_Dashboard_completo.ipynb
 
