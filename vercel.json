@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "iastatus.py",
+        "src": "api.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "iastatus.py"
+        "dest": "api.py"
       }
     ]
   }
